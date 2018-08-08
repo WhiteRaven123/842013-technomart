@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Роман](https://up.htmlacademy.ru/htmlcss/22/user/842013).
-* Наставник: `Олег Петров`.
+* Наставник: `Олег Петров`(https://htmlacademy.ru/profile/fyvfyv).
 
 ---
 
