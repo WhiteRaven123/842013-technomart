@@ -11,7 +11,7 @@
       <a href="#"><img class="header-logo" src="img/logo-head.png" alt="Техномарт"></a>
       <form><input type="search" placeholder="поиск"></form>
       <a class="bookmarks" href="#">Закладки: 0</a>
-      <a class="basket" href="#">Корзина: 10</a>
+      <a class="basket" href="#">Корзина: 0</a>
       <a class="checkout" href="#">Оформить заказ</a>
     </div>
 
@@ -237,52 +237,50 @@
     </section>
 
     <section class="info">
-        <div class="info-about">
-          <h2>Компания Техномарт</h2>
-          <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-          <p>Мы можем доставить ваш товар в самые отдаленные точки России!Техномарт работает со многими транспортными компаниями: </p>
-          <ul>
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>Желдорэкспедиция</li>
-          </ul>
-          <a href="#">Подробнее о компании</a>
-        </div>
-        <div class="info-contacts">
-          <h2>Контакты</h2>
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <img src="img/map.jpg" alt="map">
-          <a href="#">Заблудились? Напишите нам!</a>
+      <div class="info-about">
+        <h2>Компания Техномарт</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России!Техномарт работает со многими транспортными компаниями: </p>
+        <ul>
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>Желдорэкспедиция</li>
+        </ul>
+        <a href="#">Подробнее о компании</a>
+      </div>
+      <div class="info-contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис:</p>
+        <img src="img/map.jpg" alt="map">
+        <a href="#">Заблудились? Напишите нам!</a>
+      </div>
+    </section>
+    <section class="modal modal-login">
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="user-login">Ваше имя:</label>
+          <input id="user-login" type="text" name="login" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label for="user-email">Ваш e-mail:</label>
+          <input id="email" type="text" name="email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="user-letter">Текст письма:
+            <input type="text" name="text of the letter" placeholder="В свободной форме">
+          </label>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </form>
+    </section>
 
-          <section class="modal modal-login">
-            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label for="user-login">Ваше имя:</label>
-                <input id="user-login" type="text" name="login" placeholder="Имя Фамилия">
-              </p>
-              <p>
-                <label for="user-email">Ваш e-mail:</label>
-                <input id="email" type="text" name="email" placeholder="email@example.com">
-              </p>
-              <p>
-                <label class="user-letter">Текст письма:
-                  <input type="text" name="text of the letter" placeholder="В свободной форме">
-                </label>
-              </p>
-              <button class="button" type="submit">Отправить</button>
-            </form>
-            <button class="modal-close" type="button">Закрыть</button>
-          </section>
-
-          <section class="modal modal-map">
-            <h2 class="visually-hidden">Как до нас добраться</h2>
-            <p>
-              <img src="img/map-big.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
-            </p>
-            <button class="modal-close" type="button">Закрыть</button>
-          </section>
-          <!-- Так размечен попап и закрытие в курсе про разметку -->
-        </div>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-big.jpg" width="940" height="446" alt="г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+      </p>
+      <button class="modal-close" type="button">Закрыть</button>
     </section>
   </main>
 

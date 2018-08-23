@@ -59,7 +59,52 @@
     <h2 class="page-title">Перфораторы</h2>
 
     <section class="filters">
-      <h3>Фильтр:</h3> <!-- здесь будет форма -->
+      <h3>Фильтр:</h3>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>Цена:</legend>
+
+        </fieldset>
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Bosch" id="Bosch" checked>
+              <label for="Bosch">Bosch</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Интерскол" id="interscol">
+              <label for="interscol">Интерскол</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Makita" id="Makita" checked>
+              <label for="Makita">Makita</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Dewalt" id="Dewalt">
+              <label for="Dewalt">Dewalt</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="Hitachi" id="Hitachi">
+              <label for="Hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="food-group" value="battery" id="filter-battery" checked>
+              <label for="filter-battery">Аккумуляторные</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-radio" type="radio" name="food-group" id="filter-network" value="network">
+              <label for="filter-network">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button type="submit" class="filter-button button">Показать</button>
+      </form>
     </section>
 
     <section class="sorting">
@@ -189,6 +234,15 @@
         Ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
       </section>
 
+      <section class="cart-notification">
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <p class="cart-notification-title">Товар добавлен в корзину!</p>
+          <button type="submit" class="cart-order-btn">Оформить заказ</button>
+          <a href="#" class="cart-cancel-btn">Продолжить покупки</a>
+          <button class="modal-close" type="button">Закрыть</button>
+        </form>
+      </section>
+
   </main>
 
   <footer>
@@ -240,18 +294,6 @@
       </div>
     </div>
   </footer>
-
-  <div class="cart-notification">
-    <a href="#" class="cart-notification-close"></a>
-    <form action="/cart" method="post">
-      <p class="cart-notification-title">Товар добавлен в корзину!</p>
-      <div class="cart-notification-decision">
-        <button type="submit" class="cart-order-btn">Оформить заказ</button>
-        <a href="#" class="cart-cancel-btn">Продолжить покупки</a>
-        <button class="modal-close" type="button">Закрыть</button>
-      </div>
-    </form>
-  </div>
 
 </body>
 </html>
