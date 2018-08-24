@@ -63,9 +63,12 @@
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Цена:</legend>
-          <input type="range" name="radio" min="0" max="30000" value="25000">
-          <input class="min-price" type="text" value="0"> —
-          <input class="max-price" type="text" value="30000">
+          <div class="min-toggle"></div>
+          <div class="max-toggle"></div>
+          <div class="price-controls">
+            <input class="min-price" type="text" value="0"> —
+            <input class="max-price" type="text" value="30000">
+          </div>
         </fieldset>
         <fieldset>
           <legend>Производители:</legend>
