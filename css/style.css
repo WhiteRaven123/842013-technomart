@@ -10,12 +10,60 @@ body {
   color: #ffffff;
 
   background-color: #8ed78f; /*временно для отображения текста*/
-  background-position: top center;
-  background-repeat: no-repeat;
 }
 
 a {
   text-decoration: none; /*убирает подчеркивание ссылок*/
+}
+
+.header-top {
+  background-color: #293449;
+  font-size: 17px;
+  line-height: 18px;
+  text-align: left;
+}
+
+.header-top a {
+  color: #ffffff;
+}
+
+.header-top a:hover,
+.header-top a:focus {
+  background-color: black;
+} /*Закончилась шапка*/
+
+.header-middle {
+  background-color: #f3f7f9;
+  text-align: left;
+}
+
+.header-middle h1 {
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+}
+
+.header-middle p {
+  color: #ee3643;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.header-middle .adress {
+  color: #32425c;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.header-middle .authorization {
+  color: #000000;
+  font-size: 21px;
+  line-height: 21px;
+}
+
+.authorization a {
+  color: #000000;
 }
 
 .site-navigation {
@@ -26,28 +74,29 @@ a {
   background-color: #32425c;
 }
 
-.site-navigation,
-.user-navigation {
+.site-navigation {
   list-style: none; /*отмена маркеров*/
 }
 
-.site-navigation a,
-.user-navigation a {
+.site-navigation a {
   color: #ffffff; /*цвет ссылок*/
 }
 
 .site-navigation a:hover,
-.site-navigation a:focus,
-.user-navigation a:hover,
-.user-navigation a:focus {
+.site-navigation a:focus {
   background-color: #242424;
 
 /*Пользователь должен видеть, что навел на ссылку и кликнул по ней.
 Для стилизации таких состояний существуют специальные псевдоклассы.
 :hover для наведения, :focus для фокусировки.*/
+} /*Закончилась навигация*/
+
+.content-top {
+  background-color: #f3f7f9;
 }
 
-.feature-items {
+.feature-items,
+.popular-brands-list {
   list-style: none;
 }
 
@@ -55,10 +104,13 @@ a {
   font-size: 24px;
   line-height: 30px;
   text-align: left;
+  font-weight: bold;
 }
 
 .feature-item a{
+  color: #ffffff;
   font-size: 14px;
-  line-height: 17.5px;
+  line-height: 18px;
   text-align: center;
+  text-transform: uppercase;
 }
