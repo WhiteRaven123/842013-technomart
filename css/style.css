@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Cuprum", Arial, sans-serif;
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+
+  background-color: #8ed78f; /*временно для отображения текста*/
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none; /*убирает подчеркивание ссылок*/
+}
+
+.site-navigation {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none; /*отмена маркеров*/
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #ffffff; /*цвет ссылок*/
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+  background-color: #242424;
+
+/*Пользователь должен видеть, что навел на ссылку и кликнул по ней.
+Для стилизации таких состояний существуют специальные псевдоклассы.
+:hover для наведения, :focus для фокусировки.*/
+}
+
+.feature-items {
+  list-style: none;
+}
+
+.feature-item p{
+  font-size: 24px;
+  line-height: 30px;
+  text-align: left;
+}
+
+.feature-item a{
+  font-size: 14px;
+  line-height: 17.5px;
+  text-align: center;
+}
