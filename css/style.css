@@ -67,16 +67,13 @@ a {
 }
 
 .site-navigation {
+  color: #ffffff;
+  background-color: #32425c;
   font-size: 17px;
   line-height: 17px;
-  color: #ffffff;
-
-  background-color: #32425c;
+  list-style: none;
 }
 
-.site-navigation {
-  list-style: none; /*отмена маркеров*/
-}
 
 .site-navigation a {
   color: #ffffff; /*цвет ссылок*/
@@ -92,7 +89,8 @@ a {
 } /*Закончилась навигация*/
 
 .content-top {
-  background-color: #f3f7f9;
+  /*background-color: #ffffff;*/
+  background-color: #215450;/*временно чтобы было видно надписи*/
 }
 
 .feature-items,
@@ -114,3 +112,130 @@ a {
   text-align: center;
   text-transform: uppercase;
 }
+
+.slide a {
+  color: #ffffff;
+}
+
+.slide p:nth-child(1) {
+  font-size: 36px;
+  line-height: 36px;
+  text-align: left;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.slide p:nth-child(2) {
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.popular-brands-header,
+.popular-items-header {
+  background-color: #f9f5f0;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.popular-brands-header a,
+.popular-items-header a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+} /*цвет ссылки*/
+
+.item-button-bookmark,
+.catalog-item-title {
+  color: #000000;
+}
+
+.item-button-buy,
+.catalog-item-discount-price {
+  color: #ffffff;
+} /*цвет цены товара и покупки*/
+
+.catalog-item-price {
+  color: #aaaaaa;
+}
+
+.services {
+  background-color: #f4f8fa;
+}
+
+.services-header,
+.info {
+  color: #000000;
+}
+
+.services-header h2,
+.info h2 {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.services-header p,
+.info p {
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.services-items {
+  color: #ffffff;
+  background-color: #32425c;
+}
+
+.slides h3 {
+  color: #32425c;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.slides p {
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.slides a,
+.info a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: 400;
+}
+
+.footer-top .container {
+  color: #ffffff;
+  background-color: #32425c;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.footer-top .container ul {
+  list-style: none;
+}
+
+.footer-top .container a {
+  color: #ffffff;
+  /*цвет ссылок*/
+}
+
+.footer-top .container a:hover,
+.footer-top .container a:focus {
+  background-color: #242424;
