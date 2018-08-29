@@ -219,8 +219,34 @@ a {
   font-weight: 400;
 }
 
-.footer-top .container {
+.info-about ul {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.modal-login {
+  color: #000000;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.modal-login input {
+  color: #a9a9a9;
+  font-size: 14px;
+}
+
+.modal-login .button {
   color: #ffffff;
+  font-size: 14;
+  text-align: center;
+}
+
+.footer-top .container,
+.footer-middle {
   background-color: #32425c;
   font-size: 18px;
   line-height: 24px;
@@ -237,5 +263,41 @@ a {
 }
 
 .footer-top .container a:hover,
-.footer-top .container a:focus {
+.footer-top .container a:focus,
+.footer-middle a:hover,
+.footer-middle a:focus {
   background-color: #242424;
+}
+
+.footer-middle .contacts {
+  color: #f3f7f9;
+}
+
+.footer-middle ul {
+  list-style: none;
+}
+
+.footer-middle a {
+  color: #ffd180;
+}
+
+.footer-bottom {
+  color: #FFFFFF;
+  background-color: #293449;
+  font-size: 16px;
+  line-height: 18px;
+  text-align: left;
+  font-weight: 400;
+}
+
+.footer-bottom ul {
+  list-style: none;
+}
+
+.footer-bottom a {
+  color: #ffd180;
+}
+
+.social-button {
+  background-color: #293449;
+}
