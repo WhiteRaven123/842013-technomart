@@ -6,91 +6,134 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
-  font-weight: 400;
+  text-align: left;
+  font-weight: normal;
   color: #ffffff;
-
-  background-color: #8ed78f; /*временно для отображения текста*/
-}
+} /* стили для базового шрифта */
 
 a {
-  text-decoration: none; /*убирает подчеркивание ссылок*/
-}
+  text-decoration: none;
+} /* удаляем подчеркивание ссылок */
 
 .header-top {
-  background-color: #293449;
   font-size: 17px;
   line-height: 18px;
-  text-align: left;
+  background-color: #293449;
 }
 
 .header-top a {
   color: #ffffff;
 }
 
-.header-top a:hover,
-.header-top a:focus {
-  background-color: black;
-} /*Закончилась шапка*/
+.header-logo {
+  background-color: #ee3643;
+}
+
+.header-top input {
+  background-color: #293449;
+}
+
+.checkout {
+  background-color: #63a63e;
+}
+
+.header-logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-top input:hover,
+.bookmarks:hover,
+.basket:hover {
+  background-color: #212a3a;
+}
+
+.checkout:hover {
+  background-color: #5fbb2d;
+}
+
+.header-logo:active {
+  background-color: #ba2732;
+}
+
+.header-top input:focus {
+  background-color: #ffffff;
+}
+
+.bookmarks:focus,
+.basket:focus {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.checkout:focus {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #518534;
+}
 
 .header-middle {
-  background-color: #f3f7f9;
   text-align: left;
+  background-color: #f2f6f8;
 }
 
 .header-middle h1 {
-  color: #ee3643;
   font-size: 16px;
   line-height: 23px;
+  font-style: italic;
+  color: #ee3643;
 }
 
-.header-middle p {
-  color: #ee3643;
+.header-middle .phone {
   font-size: 21px;
   line-height: 21px;
+  border: 3px solid #ffffff;
+  color: #ee3643;
 }
 
 .header-middle .adress {
-  color: #32425c;
-  font-size: 14px;
-  line-height: 24px;
   text-align: center;
+  color: #32425c;
 }
 
 .header-middle .authorization {
-  color: #000000;
   font-size: 21px;
   line-height: 21px;
 }
 
 .authorization a {
   color: #000000;
+  background-color: #ffffff;
+}
+
+.authorization a:hover {
+  color: #ee3643;
+}
+
+.authorization a:focus {
+  color: rgba(0, 0, 0, 0.302);
 }
 
 .site-navigation {
-  color: #ffffff;
-  background-color: #32425c;
   font-size: 17px;
   line-height: 17px;
   list-style: none;
+  background-color: #32425c;
 }
-
 
 .site-navigation a {
-  color: #ffffff; /*цвет ссылок*/
+  color: #ffffff;
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
-  background-color: #242424;
+.site-navigation a:hover {
+  background-color: #293449;
+}
 
-/*Пользователь должен видеть, что навел на ссылку и кликнул по ней.
-Для стилизации таких состояний существуют специальные псевдоклассы.
-:hover для наведения, :focus для фокусировки.*/
-} /*Закончилась навигация*/
+.site-navigation a:focus {
+  color: rgba(255, 255, 255, 0.502);
+  background-color: #1d2739
+}
 
 .content-top {
-  /*background-color: #ffffff;*/
-  background-color: #215450;/*временно чтобы было видно надписи*/
+  background-color: #ffffff;
 }
 
 .feature-items,
@@ -98,29 +141,52 @@ a {
   list-style: none;
 }
 
-.feature-item p{
+.first-features li:nth-child(1){
+  background-color: #ffbf47;
+} /* цветовые блоки */
+
+.first-features li:nth-child(2){
+  background-color: #3bbce3;
+}
+
+.first-features li:nth-child(3){
+  background-color: #dc91d8;
+}
+
+.last-features li:nth-child(1){
+  background-color: #8ed78f;
+}
+
+.last-features li:nth-child(2){
+  background-color: #ffc047;
+}
+
+.feature-item p {
   font-size: 24px;
   line-height: 30px;
-  text-align: left;
   font-weight: bold;
 }
 
 .feature-item a{
-  color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.slide a {
-  color: #ffffff;
+.feature-item a:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.feature-item a:focus {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .slide p:nth-child(1) {
   font-size: 36px;
   line-height: 36px;
-  text-align: left;
   font-weight: bold;
   text-transform: uppercase;
 }
@@ -128,176 +194,535 @@ a {
 .slide p:nth-child(2) {
   font-size: 18px;
   line-height: 24px;
-  text-align: left;
+}
+
+.slide a {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.slide a:hover {
+  background-color: #ca2c37;
+}
+
+.slide a:focus {
+  background-color: #ba2732;
 }
 
 .popular-brands-header,
 .popular-items-header {
-  background-color: #f9f5f0;
   font-size: 30px;
   line-height: 30px;
-  text-align: left;
-  font-weight: 400;
   text-transform: uppercase;
-}
+  color: #32425c;
+  background-color: #f9f5f0;
+} /* стили заголовков "популярные товары" и "популярные производители" */
 
 .popular-brands-header a,
 .popular-items-header a {
-  color: #ffffff;
   font-size: 14px;
   line-height: 18px;
-} /*цвет ссылки*/
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+}
 
-.item-button-bookmark,
+.catalog-item {
+  font-weight: bold;
+  border: 1px solid #eaeaea;
+}
+
+.catalog-item:hover {
+  background-color: #ffffff;
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
 .catalog-item-title {
+  font-size: 18px;
+  line-height: 20px;
   color: #000000;
 }
 
-.item-button-buy,
-.catalog-item-discount-price {
-  color: #ffffff;
-} /*цвет цены товара и покупки*/
-
 .catalog-item-price {
   color: #aaaaaa;
+} /* Цвет цены товара без скидки */
+
+.catalog-item-discount-price {
+  color: #ffffff;
+  background-color: #ee3643;
+} /* Цвет цены товара со скидкой */
+
+.item-button-buy,
+.item-button-bookmark {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.item-button-buy {
+  color: #ffffff;
+  background-color: #63a63e;
+}
+
+.item-button-bookmark {
+  border: 3px solid #63a63e;
+  color: #32425c;
+  background-color: #ffffff;
+}
+
+.item-button-buy:hover {
+  background-color: #5fbb2d;
+}
+
+.item-button-bookmark:hover {
+  border: 3px solid #32425c;
+}
+
+.item-button-buy:focus {
+  background-color: #518534;
+}
+
+.item-button-bookmark:focus {
+  border: 3px solid rgba(50, 66, 92, 0.3);
+  color: rgba(50, 66, 92, 0.3);
+}
+
+.popular-brands-list li {
+  border: 1px solid #eaeaea;
+}
+
+.popular-brands-list li:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  color: #ffffff;
+}
+
+.popular-brands-list li:active {
+  opacity: 0.3;
+  box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+}
+
+.services,
+.info-about,
+.info-contacts {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.services-header h2,
+.info-about h2,
+.info-contacts h2{
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .services {
   background-color: #f4f8fa;
 }
 
-.services-header,
-.info {
-  color: #000000;
-}
-
-.services-header h2,
-.info h2 {
-  font-size: 30px;
-  line-height: 30px;
-  font-weight: 400;
-  text-align: left;
-  text-transform: uppercase;
-}
-
-.services-header p,
-.info p {
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: left;
-}
-
-.services-items {
+.services-items li {
   color: #ffffff;
   background-color: #32425c;
+  list-style: none;
+}
+
+.services-items li:hover {
+  background-color: #293449;
+}
+
+.services-items li:active {
+  color: #32425c;
+  background-color: #ffffff;
 }
 
 .slides h3 {
   color: #32425c;
   font-size: 36px;
   line-height: 36px;
-  font-weight: 400;
-  text-align: left;
+  font-weight: normal;
   text-transform: uppercase;
-}
-
-.slides p {
-  color: #000000;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  text-align: left;
 }
 
 .slides a,
 .info a {
-  color: #ffffff;
   font-size: 14px;
   line-height: 18px;
   text-align: center;
-  font-weight: 400;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #ee3643;
 }
 
 .info-about ul {
   font-size: 18px;
   line-height: 20px;
   text-align: left;
-  font-weight: 400;
+  font-weight: normal;
 }
 
 .modal-login {
-  color: #000000;
   font-size: 18px;
   line-height: 18px;
   text-align: left;
-  font-weight: 400;
+  font-weight: normal;
+  color: #000000;
+  background-color: #ffffff;
+  border-top: 7px solid #ff5357;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
 }
 
 .modal-login input {
-  color: #a9a9a9;
   font-size: 14px;
+  line-height: 18px;
+  color: #a9a9a9;
+  background-color: #ffffff;
+  border: solid 2px #d7dcde;
 }
 
 .modal-login .button {
-  color: #ffffff;
   font-size: 14;
+  line-height: 18px;
   text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.modal-login input:hover {
+  border: 2px solid #b5b5b5;
+}
+
+.modal-login input:focus {
+  border: solid 2px #ee3643;
+}
+
+.footer-logo {
+  background-color: #ee3643;
 }
 
 .footer-top .container,
 .footer-middle {
-  background-color: #32425c;
   font-size: 18px;
   line-height: 24px;
   text-align: left;
+  color: #ffffff;
+  background-color: #32425c;
 }
 
-.footer-top .container ul {
+.footer-top .container ul,
+.footer-middle ul {
   list-style: none;
 }
 
 .footer-top .container a {
   color: #ffffff;
-  /*цвет ссылок*/
-}
-
-.footer-top .container a:hover,
-.footer-top .container a:focus,
-.footer-middle a:hover,
-.footer-middle a:focus {
-  background-color: #242424;
 }
 
 .footer-middle .contacts {
   color: #f3f7f9;
 }
 
-.footer-middle ul {
-  list-style: none;
-}
-
 .footer-middle a {
   color: #ffd180;
 }
 
+.footer-top .container a:hover,
+.footer-middle a:hover {
+  text-decoration: underline;
+}
+
+.footer-top .container a:focus,
+.footer-middle a:focus {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
 .footer-bottom {
-  color: #FFFFFF;
-  background-color: #293449;
   font-size: 16px;
   line-height: 18px;
   text-align: left;
-  font-weight: 400;
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #293449;
 }
 
 .footer-bottom ul {
   list-style: none;
 }
 
-.footer-bottom a {
+.social a {
+  color: #ffffff;
+  background-color: #212a3a;
+}
+
+.social a:hover {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.feedback a,
+.copyright a {
   color: #ffd180;
 }
 
-.social-button {
-  background-color: #293449;
+.feedback a:hover,
+.copyright a:hover {
+  text-decoration: underline;
+  color: #ffd180;
+}
+
+.feedback a:focus,
+.copyright a:focus {
+  text-decoration: none;
+  color: #ee3643;
+}
+
+/*Ниже начинается каталог*/
+
+.basket-active {
+  background-color: #ee3643;
+}
+
+.user-navigation-block {
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-navigation-block li {
+  list-style: none;
+}
+
+.user-navigation-block a {
+  color: #000000;
+}
+
+.user-navigation-link {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration: underline;
+  color: #32425c;
+}
+
+.user-navigation-link a {
+  color: #32425c;
+}
+
+.user-navigation-link li:nth-child(1) {
+  list-style: none;
+}
+
+.user-navigation-link a:hover {
+  color: #ee3643;
+}
+
+.user-navigation-block a:focus,
+.user-navigation-link a:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrumbs {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: left;
+  list-style: none;
+  color: #000000;
+}
+
+.breadcrumbs a {
+  color: #000000
+}
+
+.page-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #32425c;
+  background-color: #f2f6f8;
+}
+
+.filters {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.filters h3 {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  background-color: #f7f3ec;
+}
+
+.filters legend {
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: bold;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.range-controls,
+.min-price input,
+.max-price input {
+  background-color: #f7f3ec;
+}
+
+.filter-option {
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.sorting {
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: left;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #f7f3ec;
+}
+
+.sorting h3 {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.sorting-options {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-options a{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting-option-price,
+.sorting-option-type,
+.sorting-option-function  {
+  border-bottom: 1px dotted #ee3643; /*подчеркивание точками*/
+}
+
+.sorting-option-price:hover,
+.sorting-option-type:hover,
+.sorting-option-function:hover,
+.option-up-arrow:hover,
+.option-down-arrow:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643 /*подчеркивание линией*/
+}
+
+.sorting-option-price:focus,
+.sorting-option-type:focus,
+.sorting-option-function:focus,
+.option-up-arrow:focus,
+.option-down-arrow:focus {
+  border-bottom: inherit;
+  color: #ee3643;
+}
+
+.pagination {
+  font-size: 13px;
+  line-height: 18px;
+  text-align: center;
+  font-weight: normal;
+  color: #000000;
+}
+
+.pagination li {
+  list-style: none;
+  border: 1px solid #e5e5e5;
+}
+
+.pagination a {
+  color: #000000;
+}
+
+.pagination-current {
+  background-color: #ee3643;
+}
+
+.pagination-current a {
+  color: #ffffff;
+}
+
+.pagination li:hover {
+  border: 1px solid #bdc6ca;
+}
+
+.pagination li:active {
+  border: 1px solid #ee3643;
+}
+
+.product-information h3 {
+  color: #000000;
+  font-size: 30px;
+  line-height: 30px;
+  text-align: left;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.product-information p {
+  color: #000000;
+  font-size: 13px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: normal;
+}
+
+.cart-notification {
+  font-size: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #000000;
+  background-color: #ffffff;
+  border-top: 7px solid #ff5357;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.cart-order-btn {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.cart-cancel-btn {
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  background-color: #ffffff;
 }
