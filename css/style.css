@@ -663,6 +663,7 @@ a {
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
+  font-weight: normal;
 }
 
 .product-information p {
@@ -701,7 +702,6 @@ a {
 html,
 body {
   min-width: 1122px;
-  min-height: 1750px;
 }
 
 .container {
@@ -711,8 +711,6 @@ body {
 }
 
 .page-header {
-  min-height: 320px;
-  /*margin-bottom: 60px;*/
   background-color: #f2f6f8;
 }
 
@@ -768,7 +766,7 @@ body {
 
 .feature-item {
   width: 300px;
-  min-height: 120px;
+  height: 100px;
 }
 
 .feature-items,
@@ -788,6 +786,37 @@ body {
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-end;
+}
+
+.slider {
+  position: absolute;
+}
+
+.slide {
+  position: relative;
+  display: none;
+  top: -348px;
+}
+
+.slide:nth-child(1) {
+  display: block;
+}
+
+.slide p {
+  position: relative;
+  top: 85px;
+  left: 20px;
+  margin: 0px;
+}
+
+.slide a {
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  top: -35px;
+  left: -600px;
 }
 
 .popular-items {
@@ -867,7 +896,6 @@ body {
 
 .services-items {
   width: 240px;
-  height: 180px;
   /*background-color: gray;*/
 }
 
@@ -878,7 +906,6 @@ body {
   font-size: 21px;
   line-height: 31px;
   width: 220px;
-  height: 60px;
   font-weight: bold;
 }
 
@@ -892,6 +919,12 @@ body {
   background-color: #ffffff;
   color: #32425c;
 }
+
+.slide-guarantee,
+.slide-credit {
+  display: none;
+}
+
 .slide-delivery {
   width: 275px;
   margin-left: 80px;
@@ -1022,10 +1055,16 @@ body {
 
 /* -------------------- filter */
 
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .filters {
+  display: flex;
+  flex-direction: column;
   width: 220px;
-  min-height: 1200px;
-  float: left;
 }
 
 .filters h3{
@@ -1037,8 +1076,7 @@ body {
 .sorting {
   display: flex;
   width: 700px;
-  float: right;
-  min-height: 38px;
+  height: 38px;
   margin-bottom: 20px;
   margin-left: 20px;
 }
@@ -1061,16 +1099,20 @@ body {
   margin-right: 60px;
 }
 
-.content .catalog {
+.content-corting .catalog {
   display: flex;
   flex-wrap: wrap;
   width: 700px;
-  min-height: 1142px;
-  float: right;
+  margin-left: 20px;
+}
+
+.content-corting .catalog-item {
+  margin-bottom: 20px;
 }
 
 .pagination {
   display: flex;
+  padding-bottom: 60px;
 }
 
 .pagination li {
@@ -1088,5 +1130,7 @@ body {
 
 
 .product-information {
-  padding-bottom: 50px;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  background-color: #f2f6f8;
 }
